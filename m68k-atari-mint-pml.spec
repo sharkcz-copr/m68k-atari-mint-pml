@@ -1,13 +1,13 @@
 # we are cross-compiled libraries
 %global debug_package %{nil}
 
-%global patchdate 20110207
+%global patchdate 20191013
 %global __strip /bin/true
 
 Name:           m68k-atari-mint-pml
 Summary:        Portable Math Library
 Version:        2.03
-Release:        1.%{patchdate}%{?dist}
+Release:        2.%{patchdate}%{?dist}
 License:        Public Domain
 URL:            https://github.com/freemint/pml
 Source0:        %{url}/archive/pml-%{version}/pml-%{version}.tar.gz
@@ -65,5 +65,8 @@ rm -rf %{buildroot}%{mint_mandir}
 
 
 %changelog
+* Thu Jul 07 2022 Dan Horák <dan[at]danny.cz> - 2.03-2.20191013
+- updated to patch 20191013
+
 * Thu Jul 07 2022 Dan Horák <dan[at]danny.cz> - 2.03-1.20110207
 - initial Fedora release
