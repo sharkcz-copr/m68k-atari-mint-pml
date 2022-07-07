@@ -13,6 +13,7 @@ URL:            https://github.com/freemint/pml
 Source0:        %{url}/archive/pml-%{version}/pml-%{version}.tar.gz
 Patch0:         http://vincent.riviere.free.fr/soft/m68k-atari-mint/archives/pml-%{version}-mint-%{patchdate}.patch.bz2
 BuildArch:      noarch
+BuildRequires:  make
 BuildRequires:  m68k-atari-mint-gcc
 BuildRequires:  m68k-atari-mint-mintlib
 Requires:       m68k-atari-mint-filesystem
